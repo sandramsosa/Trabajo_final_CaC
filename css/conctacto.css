@@ -46,21 +46,26 @@ h2{
 .contactanos{
   padding-top: 50px;
 }
-#form{
+form{
   width: 80%;
-  padding: 20px 0px 50px 500px;  
+  padding: 20px 0px 50px 300px;  
 }
 
 
-/* @media only screen and (max-width:767px) {
+
+@media(min-width: 400px) and (max-width: 1023px) {
   
+  form {
+    padding: 20px 0px 20px 50px; /* Ajuste de padding para dispositivos medianos */
+    width: 70%; /* Ajuste del ancho del formulario para dispositivos medianos */
+  }
 }
-@media only screen and (min-width:768px) and (max-width:1023px) {
-  
+
+@media(min-width: 1024px) and (max-width: 1439px) {
+
+  form {
+    padding: 20px 0px 20px 50px; /* Ajuste de padding para dispositivos grandes */
+    width: 80%; /* Ajuste del ancho del formulario para dispositivos grandes */
+  }
 }
-@media only screen and (min-width:1024px) and (max-width:1439px) {
-  
-}
-@media only screen and (max-width:1440px) {
-  
-} */
+
