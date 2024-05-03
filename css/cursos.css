@@ -33,6 +33,30 @@ nav {
 main {
   grid-area: main;
 }
+.btn-caja {
+  border: 0;
+  background-color: #cad2c5;
+  color: #354f52;
+  padding: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.btn-caja:link,
+.btn-caja:visited {
+  border: 0;
+  display: inline-block;
+  text-decoration: none;
+  /* transition: all 0.3s;*/
+}
+.btn-caja:hover {
+  border: 0;
+  background-color: #84a98c;
+  color: white;
+}
+
 .footer {
   grid-area: footer;
 }
