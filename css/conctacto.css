@@ -1,3 +1,4 @@
+/* estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +38,7 @@ h2{
     grid-area: footer;
   }
 }
-
+ /* Estilos del encabezado */
 header {
   position: fixed;
   top: 0;
@@ -103,7 +104,7 @@ nav li a:hover {
 .logo-image {
   max-height: 50px;
 }
-
+/* estilo boton claro oscuro */
 .dark-mode {
   background-color: gainsboro !important;
 }
@@ -125,11 +126,26 @@ nav li a:hover {
 .contactanos{
   padding-top: 50px;
 }
-
+/* estilo formulario */
 form{
   width: 80%;
   padding: 20px 0px 50px 300px;  
 }
+.btn-caja {
+  background-color: #cad2c5;
+  color: #354f52;
+  margin-top: 10px;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  /*border-radius: 0.5625rem;*/
+}
+.btn-caja:hover {
+  background-color: #84a98c;
+  color: white;
+}
+ /* estilo footer */
 footer {
   color: #fff;
   padding: 2rem;
