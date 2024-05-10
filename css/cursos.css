@@ -32,8 +32,8 @@ nav {
   grid-area: header;
 }
 .imgBanner {
-  margin-top: 3.125rem;
-  height: 25rem;
+  /*margin-top: 3.125rem;*/
+  height: 15rem;
 }
 main {
   grid-area: main;
@@ -239,14 +239,14 @@ footer {
   }
   .imgBanner {
     margin-top: 3.125rem;
-    height: 25rem;
+    /*height: 25rem;*/
   }
 
   main {
     grid-area: main;
   }
 
-  h3 {
+  .tituloh3 {
     color: #354f52;
     margin-top: 2.5rem;
     text-align: center;
@@ -346,7 +346,7 @@ footer {
   .footer {
     grid-area: footer;
   }
-  h3 {
+  .tituloh3 {
     color: #354f52;
     margin-top: 5rem;
     text-align: center;
@@ -433,7 +433,7 @@ footer {
   .footer-cursos {
     grid-area: footer;
   }
-  h3 {
+  .tituloh3 {
     color: #354f52;
     font-size: 1.4rem;
     margin-top: 6rem;
@@ -521,7 +521,7 @@ footer {
   .footer {
     grid-area: footer;
   }
-  h3 {
+  .tituloh3 {
     color: #354f52;
     font-size: 1.5rem;
     margin-top: 6rem;

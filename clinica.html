@@ -14,16 +14,33 @@
   </head>
   <body>
     <div class="contenedor">
-      <nav>BARRA DE NAVEGACION</nav>
-      <header>
-        <div class="fachada">
-          <img class="img" src="./imagenes/imgs-enlaces/clinica1.jpg" alt="" />
-        </div>
+      <header class="header">
+        <a href="/" aria-label="Enlace a la página de inicio">
+          <img
+            class="logo-image"
+            src="./imagenes/logo.png"
+            alt="Logo de la Escuela de Arte"
+          />
+        </a>
+        <nav aria-label="Menú principal">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="./acerca.html">Acerca de</a></li>
+            <li><a href="./cursos.html">Cursos y Talleres</a></li>
+            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <button id="theme-toggle-btn">Modo Claro/Oscuro</button>
+          </ul>
+        </nav>
       </header>
+      <div class="enlacesImg">
+        <img class="img" src="./imagenes/imgs-enlaces/clinica1.jpg" alt="" />
+      </div>
+
       <main>
         <div class="presentacion">
           <h1>Clínica de Obra</h1>
-          <h3>ACERCA DE</h3>
+          <h3 class="enlacesh3">ACERCA DE</h3>
 
           <p>
             Un aspecto importante de la clínica es la relación entre la imagen y
@@ -42,7 +59,7 @@
           </p>
         </div>
         <div class="precio">
-          <h3>PRECIO</h3>
+          <h3 class="enlacesh3">PRECIO</h3>
           <p>$30.000</p>
         </div>
         <div class="contacto">
@@ -50,6 +67,5 @@
         </div>
       </main>
     </div>
-    <footer>PIE DE PAGINA</footer>
   </body>
 </html>

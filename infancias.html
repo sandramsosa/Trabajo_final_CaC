@@ -14,20 +14,36 @@
   </head>
   <body>
     <div class="contenedor">
-      <nav>BARRA DE NAVEGACION</nav>
-      <header>
-        <div class="fachada">
+      <header class="header">
+        <a href="/" aria-label="Enlace a la página de inicio">
           <img
-            class="img"
-            src="./imagenes/imgs-enlaces/Taller infancias 2.jpg"
-            alt=""
+            class="logo-image"
+            src="./imagenes/logo.png"
+            alt="Logo de la Escuela de Arte"
           />
-        </div>
+        </a>
+        <nav aria-label="Menú principal">
+          <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="./acerca.html">Acerca de</a></li>
+            <li><a href="./cursos.html">Cursos y Talleres</a></li>
+            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+            <button id="theme-toggle-btn">Modo Claro/Oscuro</button>
+          </ul>
+        </nav>
       </header>
+      <div class="enlacesImg">
+        <img
+          class="img"
+          src="./imagenes/imgs-enlaces/Taller infancias 2.jpg"
+          alt=""
+        />
+      </div>
       <main>
         <div class="presentacion">
           <h1>Taller para Infancias</h1>
-          <h3>ACERCA DE</h3>
+          <h3 class="enlacesh3">ACERCA DE</h3>
 
           <p>
             Los abordajes temáticos estarán en relación a artistas visuales de
@@ -44,7 +60,7 @@
           </p>
         </div>
         <div class="precio">
-          <h3>PRECIO</h3>
+          <h3 class="enlacesh3">PRECIO</h3>
           <p>$30.000</p>
         </div>
         <div class="contacto">
@@ -52,6 +68,6 @@
         </div>
       </main>
     </div>
-    <footer>PIE DE PAGINA</footer>
+    <script src="./js/cursos_script.js"></script>
   </body>
 </html>
