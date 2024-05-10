@@ -35,3 +35,9 @@ document.getElementById("btncaja6").onclick = function () {
     window.location.href = "clinica.html";
   }, 1000);
 };
+
+document
+  .getElementById("theme-toggle-btn")
+  .addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+  });
