@@ -28,11 +28,11 @@ body {
 nav {
   grid-area: nav;
 }
-header {
+.header {
   grid-area: header;
 }
 .imgBanner {
-  margin-top: 6.5625rem;
+  margin-top: 3.125rem;
   height: 25rem;
 }
 main {
@@ -68,7 +68,7 @@ footer {
 /******LILIA************************/
 
 /* Estilos del encabezado */
-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -82,12 +82,12 @@ header {
   background-color: #fff; /* Color de fondo del navbar */
 }
 
-header .logo-container {
+.header .logo-container {
   display: flex;
   align-items: center;
 }
 
-header nav ul {
+.header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -95,22 +95,22 @@ header nav ul {
   align-items: center;
 }
 
-header nav ul li {
+.header nav ul li {
   margin-right: 20px;
 }
 
-header nav ul li a {
+.header nav ul li a {
   color: #000;
   font-size: larger;
   transition: color 0.3s;
   text-decoration: none;
 }
 
-header nav ul li a:hover {
+.header nav ul li a:hover {
   color: #84a98c;
 }
 
-header a {
+.header a {
   color: #fff;
   text-decoration: none;
 }
@@ -209,6 +209,9 @@ footer {
   gap: 15px;
   justify-content: center;
 }
+.h3Footer {
+  color: white;
+}
 
 /**********media queries***********/
 
@@ -225,7 +228,6 @@ footer {
     grid-template:
       "nav"
       "header"
-      ".divBanner"
       "main"
       "footer";
   }
@@ -236,7 +238,7 @@ footer {
     grid-area: header;
   }
   .imgBanner {
-    margin-top: 6.5625rem;
+    margin-top: 3.125rem;
     height: 25rem;
   }
 
@@ -332,11 +334,10 @@ footer {
   }
   .header {
     grid-area: header;
-    margin-top: 3.125rem;
     margin-bottom: 1.5rem;
   }
   .imgBanner {
-    margin-top: 6.5625rem;
+    margin-top: 3.125rem;
     height: 25rem;
   }
   main {
@@ -420,11 +421,10 @@ footer {
   }
   .header {
     grid-area: header;
-    margin-top: 3.125rem;
     margin-bottom: 1.5rem;
   }
   .imgBanner {
-    margin-top: 6.5625rem;
+    margin-top: 3.125rem;
     height: 25rem;
   }
   main {
@@ -510,10 +510,9 @@ footer {
   }
   .header {
     grid-area: header;
-    margin-top: 3.125rem;
   }
   .imgBanner {
-    margin-top: 6.5625rem;
+    margin-top: 3.125rem;
     height: 30rem;
   }
   main {
