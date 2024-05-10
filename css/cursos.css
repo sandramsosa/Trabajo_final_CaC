@@ -64,25 +64,6 @@ main {
   grid-area: footer;
 }
 /******LILIA
-/* estilo boton claro oscuro */
-.dark-mode {
-  background-color: gainsboro !important;
-}
-
-#theme-toggle-btn {
-  background-color: transparent;
-  color: #000;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-#theme-toggle-btn:hover {
-  background-color: #84a98c59;
-}
 
 /* Estilos del encabezado */
 header {
