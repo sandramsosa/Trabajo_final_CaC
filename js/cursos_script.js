@@ -7,34 +7,35 @@ const btncaja6 = document.getElementById("btncaja6");
 
 document.getElementById("btncaja1").onclick = function () {
   setTimeout(function () {
-    window.location.href = "infancias.html";
+    window.open("infancias.html", "_blank");
   }, 1000);
 };
 document.getElementById("btncaja2").onclick = function () {
   setTimeout(function () {
-    window.location.href = "arteurbano.html";
+    window.open("arteurbano.html", "_blank");
   }, 1000);
 };
 document.getElementById("btncaja3").onclick = function () {
   setTimeout(function () {
-    window.location.href = "ilustracion.html";
+    window.open("ilustracion.html", "_blank");
   }, 1000);
 };
 document.getElementById("btncaja4").onclick = function () {
   setTimeout(function () {
-    window.location.href = "pinturaCreativa.html";
+    window.open("pinturaCreativa.html", "_blank");
   }, 1000);
 };
 document.getElementById("btncaja5").onclick = function () {
   setTimeout(function () {
-    window.location.href = "H.A.html";
+    window.open("H.A.html", "_blank");
   }, 1000);
 };
 document.getElementById("btncaja6").onclick = function () {
   setTimeout(function () {
-    window.location.href = "clinica.html";
+    window.open("clinica.html", "_blank");
   }, 1000);
 };
+
 
 document
   .getElementById("theme-toggle-btn")
