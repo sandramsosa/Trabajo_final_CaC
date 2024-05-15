@@ -1,28 +1,63 @@
-/* estilos generales */
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #ffffff;
+html {
+  width: 100%;
+  height: 100%;
 }
 
-/* Estilos del encabezado */
+body {
+  font-family: "lato", sans-serif;
+  color: #354f52;
+}
+
+h1 {
+  letter-spacing: 0.6rem;
+}
+
+.contenedor {
+  display: grid;
+  grid-template:
+    "nav"
+    "header"
+    "main"
+    "footer";
+
+  .nav {
+    grid-area: nav;
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  div img {
+    width: 100%;
+    height: 80%;
+  }
+}
+
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #fff; /* Color de fondo del navbar */
+  background-color: #fff;
+  /* Color de fondo del navbar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo-container {
@@ -45,7 +80,6 @@ header nav ul li {
 header nav ul li a {
   color: #000;
   font-size: 1.5rem;
-  /* font-size: larger; */
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -57,6 +91,14 @@ header nav ul li a:hover {
 header a {
   color: #fff;
   text-decoration: none;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 nav ul {
@@ -77,6 +119,7 @@ nav li a:hover {
 .logo-image {
   max-height: 50px;
 }
+
 /* estilo boton claro oscuro */
 .dark-mode {
   background-color: gainsboro !important;
@@ -117,6 +160,7 @@ nav li a:hover {
   font-size: 100px;
   text-transform: uppercase;
 }
+
 /* estilo contenido */
 main {
   margin-top: 60px;
@@ -167,14 +211,15 @@ section a {
 /* Estilos de las letras (Cursos)*/
 
 #letters {
-  align-items: center;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px;
   justify-content: center;
-  justify-items: center;
+  align-items: center;
   font-weight: bold;
-  gap: 120px;
-  margin: 60px 0px;
+  height: 100vh;
 }
+
 
 #letters div {
   align-items: center;
@@ -255,11 +300,126 @@ footer {
   justify-content: center;
 }
 
+
 /* Media query */
 
-/* Tablets y Smartphones */
-@media only screen and (max-width: 1100px) {
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: row;
+    align-items: flex-start;
+
+    nav ul li a {
+      font-size: 0.9rem;
+    }
+
+    .logo-image {
+      width: 25px;
+      height: 25px;
+    }
+
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  nav.show {
+    display: block;
+  }
+
+  #menu-toggle.show {
+    display: none;
+  }
+  
   #letters {
-    overflow-x: scroll;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+  }
+
+  #letters span {
+    font-size: 50px;
+  }
+
+  #letters small {
+    margin-top: 20px;
+    font-size: 10px;
+  }
+
+  footer {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+
+    #logo-image-footer {
+      width: 50px;
+      height: 50px;
+    }
+
+    h3,
+    p {
+      font-size: 0.8rem;
+    }
+
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 10px;
+  }
+
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+
+  #letters {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  #letters span {
+    font-size: 70px;
+  }
+
+  #letters small {
+    margin-top: 25px;
+    font-size: 16px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  header nav ul li a {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
