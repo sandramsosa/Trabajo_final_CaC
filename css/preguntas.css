@@ -202,11 +202,18 @@ footer {
     overflow-x: scroll;
   }
 }
-@media(min-width: 400px) and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
   div img {
     margin-top: 3.125rem;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  div img {
+    margin-top: 3.125rem;
+  }
 }
+
 
 @media(min-width: 1024px) and (max-width: 1439px) {
 
@@ -214,5 +221,5 @@ footer {
     margin-top: 3.125rem;
     height: 25rem;
   }
-  
+
 }
