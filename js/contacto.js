@@ -19,3 +19,8 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+//menu responsive
+document.getElementById('menu-toggle').addEventListener('click', function() {
+  document.querySelector('nav').classList.toggle('show');
+  this.classList.toggle('show');
+});
