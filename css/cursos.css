@@ -232,8 +232,6 @@ footer {
 }
 
 /**********media queries***********/
-
-
 @media screen and (max-width: 767px) {
   header {
     flex-direction: row;
@@ -454,33 +452,27 @@ footer {
 }
 
 /********************************************************************/
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .contenedor {
-    display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "div"
-      "main"
-      "footer";
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 10px;
   }
-  nav {
-    grid-area: nav;
+
+  header nav ul li a {
+    font-size: 1.2rem;
   }
-  .header {
-    grid-area: header;
-    margin-bottom: 1.5rem;
+
+  .main {
+    padding: 20px 200px 100px 200px;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
   }
   .imgBanner {
     margin-top: 3.125rem;
     height: 25rem;
   }
-  main {
-    grid-area: main;
-  }
-  .footer-cursos {
-    grid-area: footer;
-  }
+
   .tituloh3 {
     color: #354f52;
     font-size: 1.4rem;
@@ -543,32 +535,19 @@ footer {
   }
 }
 /**********************************************************************/
-@media screen and (min-width: 1441px) {
-  .contenedor {
-    display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "div"
-      "main"
-      "footer";
+@media screen and (min-width: 1444px) {
+  header {
+    padding: 10px 15px;
   }
-  nav {
-    grid-area: nav;
-  }
-  .header {
-    grid-area: header;
+
+  header nav ul li a {
+    font-size: 1.3rem;
   }
   .imgBanner {
     margin-top: 3.125rem;
     height: 30rem;
   }
-  main {
-    grid-area: main;
-  }
-  .footer {
-    grid-area: footer;
-  }
+  
   .tituloh3 {
     color: #354f52;
     font-size: 1.5rem;
