@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,20 +18,16 @@
     <div class="contenedor">
       <header class="header">
         <a href="/" aria-label="Enlace a la página de inicio">
-          <img
-            class="logo-image"
-            src="./imagenes/imgs-banners/logo.png"
-            alt="Logo de la Escuela de Arte"
-          />
+          <img class="logo-image" src="./imagenes/logo.png" alt="Logo de la Escuela de Arte" />
         </a>
-
+        <button id="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav aria-label="Menú principal">
           <ul>
             <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./acerca.html">Acerca de</a></li>
-          <li><a href="./cursos.html">Cursos y Talleres</a></li>
-          <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
+            <li><a href="./acerca.html">Acerca de</a></li>
+            <li><a href="./cursos.html">Cursos y Talleres</a></li>
+            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
             <button id="theme-toggle-btn">Modo Claro/Oscuro</button>
           </ul>
         </nav>
@@ -257,5 +253,11 @@
       </footer>
     </div>
     <script src="./js/cursos_script.js"></script>
+    <script>
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.querySelector('nav').classList.toggle('show');
+        this.classList.toggle('show');
+      });
+    </script>
   </body>
 </html>
