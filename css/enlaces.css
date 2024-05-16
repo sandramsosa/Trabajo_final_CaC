@@ -35,26 +35,26 @@ main {
 /******LILIA************************/
 
 /* Estilos del encabezado */
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #fff; /* Color de fondo del navbar */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header .logo-container {
+header .logo-container {
   display: flex;
   align-items: center;
 }
 
-.header nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -62,24 +62,32 @@ main {
   align-items: center;
 }
 
-.header nav ul li {
+header nav ul li {
   margin-right: 20px;
 }
 
-.header nav ul li a {
+header nav ul li a {
   color: #000;
   font-size: 1.5rem;
   transition: color 0.3s;
   text-decoration: none;
 }
 
-.header nav ul li a:hover {
+header nav ul li a:hover {
   color: #84a98c;
 }
 
-.header a {
+header a {
   color: #fff;
   text-decoration: none;
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 nav ul {
@@ -100,6 +108,7 @@ nav li a:hover {
 .logo-image {
   max-height: 50px;
 }
+
 /* estilo boton claro oscuro */
 .dark-mode {
   background-color: gainsboro !important;
@@ -112,36 +121,56 @@ nav li a:hover {
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
-  /* border-radius: 5px;*/
+  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 #theme-toggle-btn:hover {
-  /* background-color: #84a98c59;*/
-  color: #fff;
-  background-color: #84a98c;
+  background-color: #84a98c59;
 }
 
 /**********media queries***********/
-@media only screen and (max-width: 1100px) {
-  #letters {
-    overflow-x: scroll;
-  }
-}
 
 @media screen and (max-width: 767px) {
-  .contenedor {
-    display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "main";
+  header {
+    flex-direction: row;
+    align-items: flex-start;
+    nav ul li a {
+      font-size: 0.9rem;
+    }
+    .logo-image{
+      width: 25px;
+      height: 25px;
+    }
+  
   }
+
+  #menu-toggle {
+    display: block;
+  }
+
   nav {
-    grid-area: nav;
+    display: none;
+    width: 100%;
   }
-  .header {
-    grid-area: header;
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+ 
+  nav.show {
+    display: block;
+  }
+
+  #menu-toggle.show {
+    display: none;
   }
   .enlacesImg {
     margin-top: 6.25rem;
@@ -208,19 +237,14 @@ nav li a:hover {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .contenedor {
-    display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "main";
+  header {
+    padding: 10px;
   }
-  nav {
-    grid-area: nav;
+
+  header nav ul li a {
+    font-size: 1.2rem;
   }
-  .header {
-    grid-area: header;
-  }
+
   .enlacesImg {
     margin-top: 6.25rem;
     display: flex;
@@ -286,18 +310,12 @@ nav li a:hover {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .contenedor {
-    display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "main";
+  header {
+    padding: 10px 15px;
   }
-  nav {
-    grid-area: nav;
-  }
-  .header {
-    grid-area: header;
+
+  header nav ul li a {
+    font-size: 1.3rem;
   }
   .enlacesImg {
     margin-top: 6.25rem;
@@ -365,19 +383,12 @@ nav li a:hover {
   }
 }
 @media screen and (min-width: 1441px) {
-  .contenedor {
-    display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "main";
-  }
-  nav {
-    grid-area: nav;
+  header {
+    padding: 10px 15px;
   }
 
-  .header {
-    grid-area: header;
+  header nav ul li a {
+    font-size: 1.3rem;
   }
   .enlacesImg {
     margin-top: 6.25rem;
