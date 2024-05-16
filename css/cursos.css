@@ -24,28 +24,27 @@ body {
       "header"
       "main"
       "footer";
-  
-    nav {
-      grid-area: nav;
-    }
-  
-    .header {
-      grid-area: header;
-    }
-  
-    .imgBanner {
-      /*margin-top: 3.125rem;*/
-      height: 15rem;
-    }
-  
-    main {
-      grid-area: main;
-    }
-  
-    footer {
-      grid-area: footer;
-    }
     
+}
+nav {
+  grid-area: nav;
+}
+
+.header {
+  grid-area: header;
+}
+
+.imgBanner {
+  /*margin-top: 3.125rem;*/
+  height: 15rem;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
 
 .btn-caja {
@@ -460,7 +459,11 @@ footer {
   header nav ul li a {
     font-size: 1.2rem;
   }
-
+  .imgBanner {
+    margin-top: 3.125rem;
+    height: 30rem;
+  }
+  
   .main {
     padding: 20px 200px 100px 200px;
   }
@@ -468,10 +471,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .imgBanner {
-    margin-top: 3.125rem;
-    height: 25rem;
-  }
+  
 
   .tituloh3 {
     color: #354f52;
