@@ -130,12 +130,12 @@ nav li a:hover {
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
-  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 #theme-toggle-btn:hover {
-  background-color: #84a98c59;
+  background-color: #84a98c;
+  color: #fff;
 }
 .contactanos{
   padding-top: 50px;
