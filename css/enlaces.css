@@ -68,7 +68,7 @@ header nav ul li {
 
 header nav ul li a {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -241,10 +241,6 @@ nav li a:hover {
     padding: 10px;
   }
 
-  header nav ul li a {
-    font-size: 1.2rem;
-  }
-
   .enlacesImg {
     margin-top: 6.25rem;
     display: flex;
@@ -314,9 +310,6 @@ nav li a:hover {
     padding: 10px 15px;
   }
 
-  header nav ul li a {
-    font-size: 1.3rem;
-  }
   .enlacesImg {
     margin-top: 6.25rem;
     display: flex;
@@ -387,9 +380,6 @@ nav li a:hover {
     padding: 10px 15px;
   }
 
-  header nav ul li a {
-    font-size: 1.3rem;
-  }
   .enlacesImg {
     margin-top: 6.25rem;
     display: flex;

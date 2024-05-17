@@ -11,12 +11,8 @@ html {
 }
 
 body {
-  font-family: "lato", sans-serif;
-  color: #354f52;
-}
-
-h1 {
-  letter-spacing: 0.6rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
 }
 
 .contenedor {
@@ -44,14 +40,13 @@ h1 {
     height: 80%;
   }
 }
-
+/* estilos header */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: #fff;
-  /* Color de fondo del navbar */
   position: fixed;
   width: 100%;
   top: 0;
@@ -79,7 +74,7 @@ header nav ul li {
 
 header nav ul li a {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -132,12 +127,10 @@ nav li a:hover {
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
-  /*border-radius: 5px;*/
   transition: background-color 0.3s, color 0.3s;
 }
 
 #theme-toggle-btn:hover {
-  /* background-color: #84a98c59;*/
   color: #fff;
   background-color: #84a98c;
 }
@@ -157,7 +150,7 @@ nav li a:hover {
 }
 
 .title-image-over {
-  font-size: 100px;
+  font-size: 6.5rem;
   text-transform: uppercase;
 }
 
@@ -230,7 +223,7 @@ section a {
 
 #letters span {
   color: rgba(132, 169, 140, 0.467);
-  font-size: 90px;
+  font-size: 6rem;
 }
 
 #letters small {
@@ -308,15 +301,6 @@ footer {
     flex-direction: row;
     align-items: flex-start;
 
-    nav ul li a {
-      font-size: 0.9rem;
-    }
-
-    .logo-image {
-      width: 25px;
-      height: 25px;
-    }
-
   }
 
   #menu-toggle {
@@ -345,6 +329,14 @@ footer {
   #menu-toggle.show {
     display: none;
   }
+  #container-title-image-over {
+    bottom: 600px; 
+    right: 200px; 
+  }
+
+  .title-image-over {
+    font-size: 2rem; 
+  }
   
   #letters {
     grid-template-columns: repeat(2, 1fr);
@@ -353,13 +345,8 @@ footer {
     padding: 20px;
   }
 
-  #letters span {
-    font-size: 50px;
-  }
-
   #letters small {
     margin-top: 20px;
-    font-size: 10px;
   }
 
   footer {
@@ -372,11 +359,6 @@ footer {
       height: 50px;
     }
 
-    h3,
-    p {
-      font-size: 0.8rem;
-    }
-
   }
 
 }
@@ -386,23 +368,23 @@ footer {
   header {
     padding: 10px;
   }
-
-  header nav ul li a {
-    font-size: 1.2rem;
+  #container-title-image-over {
+    bottom: 400px; 
+    right: 350px; 
   }
 
+  .title-image-over {
+    font-size: 4rem; 
+  }
   #letters {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-  }
-
-  #letters span {
-    font-size: 70px;
+    height: auto;
+    padding: 20px;
   }
 
   #letters small {
-    margin-top: 25px;
-    font-size: 16px;
+    margin-top: 20px;
   }
 
   .footer-container {
@@ -414,11 +396,32 @@ footer {
   header {
     padding: 10px 15px;
   }
-
-  header nav ul li a {
-    font-size: 1.3rem;
+  #hero-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  #container-title-image-over {
+    position: absolute;
+    bottom: 100px;
+    right: 400px;
+    background: white;
+  }
+  
+  .title-image-over {
+    text-transform: uppercase;
+  }
+  
+  #letters {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    height: auto;
+    padding: 20px;
   }
 
+  #letters small {
+    margin-top: 20px;
+  }
   .footer-container {
     grid-template-columns: repeat(3, 1fr);
   }

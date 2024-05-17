@@ -11,12 +11,8 @@ html {
 }
 
 body {
-  font-family: "lato", sans-serif;
-  color: #354f52;
-}
-
-h1 {
-  letter-spacing: 0.6rem;
+  font-family: "Lato", sans-serif;
+  font-size: 1.25rem;
 }
 
 .contenedor {
@@ -41,11 +37,11 @@ h1 {
   
   div img {
     width: 100%;
-    height: 30rem;
-    margin-bottom: 20px;
+    height: 33rem;
   }
 }
 
+/* estilos del header */
 header {
   display: flex;
   justify-content: space-between;
@@ -79,7 +75,7 @@ header nav ul li {
 
 header nav ul li a {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -139,8 +135,23 @@ nav li a:hover {
   color: #fff;
 }
 
+/* estilo titulos */
+h3 { 
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.preguntas {
+  color: #354f52;
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.6rem;
+  word-spacing: 0.3rem;
+}
+/* estilo de contenido */
 main {
-  padding: 100px;
+  padding: 50px 200px;
 }
 /* estilo footer */
 footer {
@@ -203,16 +214,13 @@ footer {
 @media screen and (max-width: 767px) {
   header {
     flex-direction: row;
-    align-items: flex-start;
-    nav ul li a {
-      font-size: 0.9rem;
-    }
-    .logo-image{
-      width: 25px;
-      height: 25px;
-    }
-  
+    align-items: flex-start;  
   }
+  .logo-image{
+    width: 25px;
+    height: 25px;
+  }
+
 
   #menu-toggle {
     display: block;
@@ -241,13 +249,9 @@ footer {
   #menu-toggle.show {
     display: none;
   }
-
   .main {
-    padding: 20px;
-    h1{
-      font-size: 0.9rem;
-      text-align: center;
-    }
+    padding: 50px;
+
   }
   footer{
     .footer-container {
@@ -257,26 +261,16 @@ footer {
       width: 50px;
       height: 50px;
     }
-    h3, p{
-      font-size: 0.8rem;
-    }
-
-  }
-  
+  } 
 }
-
-  
+ 
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     header {
       padding: 10px;
     }
   
-    header nav ul li a {
-      font-size: 1.2rem;
-    }
-  
     .main {
-      padding: 20px 200px 100px 200px;
+      padding: 40px;
     }
   
     .footer-container {
@@ -287,14 +281,6 @@ footer {
   @media screen and (min-width: 1024px) and (max-width: 1439px) {
     header {
       padding: 10px 15px;
-    }
-  
-    header nav ul li a {
-      font-size: 1.3rem;
-    }
-  
-    .main {
-      padding: 20px 300px 150px 300px;
     }
   
     .footer-container {

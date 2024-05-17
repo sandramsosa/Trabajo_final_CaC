@@ -14,7 +14,7 @@ img {
 
 body {
   font-family: "Lato", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .contenedor {
@@ -23,8 +23,7 @@ body {
       "nav"
       "header"
       "main"
-      "footer";
-    
+      "footer";    
 }
 nav {
   grid-area: nav;
@@ -35,7 +34,6 @@ nav {
 }
 
 .imgBanner {
-  /*margin-top: 3.125rem;*/
   height: 15rem;
 }
 
@@ -46,7 +44,7 @@ main {
 footer {
   grid-area: footer;
 }
-
+/* estilo de botones */
 .btn-caja {
   border: 0;
   background-color: #cad2c5;
@@ -54,7 +52,6 @@ footer {
   padding: 1.2rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  font-size: 1.2rem;
   transition: all 0.3s;
 }
 
@@ -79,7 +76,6 @@ header {
   align-items: center;
   padding: 10px 20px;
   background-color: #fff;
-  /* Color de fondo del navbar */
   position: fixed;
   width: 100%;
   top: 0;
@@ -107,7 +103,7 @@ header nav ul li {
 
 header nav ul li a {
   color: #000;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   transition: color 0.3s;
   text-decoration: none;
 }
@@ -156,22 +152,33 @@ nav li a:hover {
 #theme-toggle-btn {
   background-color: transparent;
   color: #000;
+  font-size: 1rem;
   border: none;
   cursor: pointer;
-  font-size: 16px;
   padding: 10px 20px;
-  /*border-radius: 5px;*/
   transition: background-color 0.3s, color 0.3s;
 }
 
 #theme-toggle-btn:hover {
-  /* background-color: #84a98c59;*/
   color: #fff;
   background-color: #84a98c;
 }
 
+/* estilo titulos */
+h2, h3 {
+  color: #354f52;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+.tituloh3 {
+  font-size: 1.5rem;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  letter-spacing: 0.6rem;
+  word-spacing: 0.3rem;
+}
 /* Estilos del pie de página */
-
 footer {
   color: #fff;
   padding: 2rem;
@@ -235,22 +242,15 @@ footer {
   header {
     flex-direction: row;
     align-items: flex-start;
-
-    nav ul li a {
-      font-size: 0.9rem;
-    }
-
-    .logo-image {
-      width: 25px;
-      height: 25px;
-    }
-
   }
-
+  
+  .logo-image {
+    width: 25px;
+    height: 25px;
+  }
   #menu-toggle {
     display: block;
   }
-
   nav {
     display: none;
     width: 100%;
@@ -275,20 +275,12 @@ footer {
   }
   .imgBanner {
     margin-top: 3.125rem;
-    /*height: 25rem;*/
   }
 
   main {
     grid-area: main;
   }
 
-  .tituloh3 {
-    color: #354f52;
-    margin-top: 2.5rem;
-    text-align: center;
-    letter-spacing: 0.3rem;
-    word-spacing: 0.1rem;
-  }
   .cursos {
     display: flex;
     flex-direction: column;
@@ -316,12 +308,7 @@ footer {
     justify-content: center;
     margin: 3rem;
   }
-  h2 {
-    font-size: 1.5rem;
-    color: #354f52;
-    margin-bottom: 3rem;
-    font-weight: 700;
-  }
+  
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;
@@ -354,12 +341,6 @@ footer {
       width: 50px;
       height: 50px;
     }
-
-    h3,
-    p {
-      font-size: 0.8rem;
-    }
-
   }
 }
 /***********************************************************/
@@ -372,11 +353,9 @@ footer {
       "header"
       "div"
       "main"
-      "footer";
+      "footer";    
   }
-  nav {
-    grid-area: nav;
-  }
+  
   .header {
     grid-area: header;
     margin-bottom: 1.5rem;
@@ -388,16 +367,7 @@ footer {
   main {
     grid-area: main;
   }
-  .footer {
-    grid-area: footer;
-  }
-  .tituloh3 {
-    color: #354f52;
-    margin-top: 5rem;
-    text-align: center;
-    letter-spacing: 0.4rem;
-    word-spacing: 0.2rem;
-  }
+
   .cursos {
     display: flex;
     flex-direction: column;
@@ -424,12 +394,7 @@ footer {
     margin: 3rem;
     width: 50%;
   }
-  h2 {
-    font-size: 1.2rem;
-    color: #354f52;
-    margin-bottom: 3rem;
-    font-weight: 700;
-  }
+  
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;
@@ -450,15 +415,13 @@ footer {
   }
 }
 
+
 /********************************************************************/
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
   header {
     padding: 10px;
   }
 
-  header nav ul li a {
-    font-size: 1.2rem;
-  }
   .imgBanner {
     margin-top: 3.125rem;
     height: 30rem;
@@ -472,16 +435,6 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   
-
-  .tituloh3 {
-    color: #354f52;
-    font-size: 1.4rem;
-    margin-top: 6rem;
-    margin-bottom: 8rem;
-    text-align: center;
-    letter-spacing: 0.6rem;
-    word-spacing: 0.3rem;
-  }
   .cursos {
     display: flex;
     flex-direction: column;
@@ -509,12 +462,7 @@ footer {
     margin: 2rem;
     width: 50%;
   }
-  h2 {
-    font-size: 1.5rem;
-    color: #354f52;
-    margin-bottom: 2rem;
-    font-weight: 700;
-  }
+ 
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;
@@ -533,6 +481,7 @@ footer {
     background-color: #84a98c;
     color: white;
   }
+  
 }
 /**********************************************************************/
 @media screen and (min-width: 1444px) {
@@ -540,23 +489,11 @@ footer {
     padding: 10px 15px;
   }
 
-  header nav ul li a {
-    font-size: 1.5rem;
-  }
   .imgBanner {
     margin-top: 3.125rem;
     height: 30rem;
   }
   
-  .tituloh3 {
-    color: #354f52;
-    font-size: 1.5rem;
-    margin-top: 6rem;
-    margin-bottom: 5rem;
-    text-align: center;
-    letter-spacing: 0.6rem;
-    word-spacing: 0.3rem;
-  }
   .cursos {
     display: flex;
     flex-direction: column;
@@ -584,12 +521,6 @@ footer {
     text-align: center;
     margin: 3rem;
     width: 50%;
-  }
-  h2 {
-    font-size: 1.4rem;
-    color: #354f52;
-    margin-bottom: 3rem;
-    font-weight: 700;
   }
   .btn-caja {
     background-color: #cad2c5;
