@@ -18,9 +18,9 @@ body {
 .contenedor {
   display: grid;
   grid-template:
-    "nav" 
-    "header" 
-    "main" 
+    "nav"
+    "header"
+    "main"
     "footer";
 
   .nav {
@@ -34,7 +34,6 @@ body {
   .footer {
     grid-area: footer;
   }
-
 }
 iframe {
   width: 100%;
@@ -147,9 +146,12 @@ h3.contactanos {
 }
 
 /* estilo formulario */
-form{
+form {
   width: 80%;
-  padding: 20px 0px 50px 300px;  
+  padding: 20px 0px 50px 300px;
+}
+.form-control {
+  margin-bottom: 2.5rem;
 }
 .btn-caja {
   background-color: #cad2c5;
@@ -159,12 +161,19 @@ form{
   padding-left: 2rem;
   padding-right: 2rem;
   font-size: 1rem;
+  border: none;
+  margin-top: 3rem;
+  transition: all 0.3s;
 }
 .btn-caja:hover {
   background-color: #84a98c;
   color: white;
 }
- /* estilo footer */
+main {
+  margin-bottom: 9rem;
+}
+
+/* estilo footer */
 footer {
   color: #fff;
   padding: 2rem;
@@ -208,7 +217,7 @@ footer {
   align-items: center;
   gap: 4px;
   margin-top: 10px;
-}    
+}
 
 #logo-image-footer {
   max-height: 75px;
@@ -225,10 +234,9 @@ footer {
 @media screen and (max-width: 767px) {
   header {
     flex-direction: row;
-    align-items: flex-start; 
-  
+    align-items: flex-start;
   }
-  .logo-image{
+  .logo-image {
     width: 25px;
     height: 25px;
   }
@@ -251,12 +259,12 @@ footer {
     margin-right: 0;
     margin-bottom: 10px;
   }
- 
+
   form {
-    padding: 20px 0px 20px 20px; 
-    width: 95%; 
+    padding: 20px 0px 20px 20px;
+    width: 95%;
   }
- 
+
   nav.show {
     display: block;
   }
@@ -265,50 +273,42 @@ footer {
     display: none;
   }
 
-  footer{
+  footer {
     .footer-container {
       grid-template-columns: 1fr;
     }
-    #logo-image-footer{
+    #logo-image-footer {
       width: 50px;
       height: 50px;
     }
-
   }
-  
 }
-  
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    header {
-      padding: 10px;
-    }
-    form {
-      padding: 20px 0px 20px 20px; 
-      width: 98%; 
-    }
-  
-    .footer-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  header {
+    padding: 10px;
   }
-  
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    header {
-      padding: 10px 15px;
-    }
-  
-    form {
-      padding: 20px 0px 20px 20px; 
-      width: 99%; 
-    }
-  
-    .footer-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  form {
+    padding: 20px 0px 20px 20px;
+    width: 98%;
   }
-  
 
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    padding: 10px 15px;
+  }
 
+  form {
+    padding: 20px 0px 20px 20px;
+    width: 99%;
+  }
 
-
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

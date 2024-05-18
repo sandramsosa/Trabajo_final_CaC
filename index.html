@@ -15,13 +15,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="icon" type="image/png" href="./imagenes/logo.png" />
+    <link rel="icon" type="image/png" href="./imagenes/logoOK.png" />
   </head>
 
   <body>
     <header class="header">
       <a href="./index.html" aria-label="Enlace a la página de inicio">
-        <img class="logo-image" src="./imagenes/logo.png" alt="Logo de la Escuela de Arte" />
+        <img
+          class="logo-image"
+          src="./imagenes/logoOK.png"
+          alt="Logo de la Escuela de Arte"
+        />
       </a>
       <button id="menu-toggle" aria-label="Toggle menu">☰</button>
       <nav aria-label="Menú principal">
@@ -48,8 +52,8 @@
         <p class="title-image-over">d a d.</p>
       </div>
       <section>
-        <a href="./cursos.html"><h2>Cursos Disponibles</h2></a>
-      
+        <a href="./cursos.html"> <h2>CURSOS DISPONIBLES</h2></a>
+
         <p
           style="
             text-align: center;
@@ -66,51 +70,47 @@
             <p>Arte Urbano o Graffiti</p>
             <small
               >Curso que permite explorar técnicas de graffiti, stencil, y
-              muralismo generando un proceso creativo de un boceto a gran
-              formato en muro de manera fluida</small
-            >
+              muralismo.
+            </small>
           </div>
           <div>
             <span>C</span>
-            <p>Clínica de obra</p>
+            <p>Clínica de Obra</p>
             <small
-              >Sumergete un ambiente de colaboración y crítica constructiva para
-              explorar proyectos artísticos.
+              >Sumergite en un ambiente de colaboración y crítica constructiva
+              para explorar proyectos artísticos.
             </small>
           </div>
           <div>
             <span>I</span>
-            <p>Ilustración digital</p>
+            <p>Ilustración Digital</p>
             <small
-              >Curso que combina materias de Bellas Artes con la enseñanza del
-              software necesario para todo artista digital.</small
+              >El curso combina materias de Bellas Artes con la enseñanza del
+              software necesario.</small
             >
           </div>
           <div>
             <span>H</span>
             <p>Historia del Arte Argentino</p>
             <small
-              >Curso que ofrece un análisis exhaustivo de la evolución del arte
-              en Argentina, desde sus raíces precolombinas hasta la vibrante
-              escena contemporánea.
+              >Análisis exhaustivo de la evolución del arte en argentino, desde
+              sus raíces hasta la actualidad.
             </small>
           </div>
           <div>
             <span>T</span>
-            <p>Taller de de Arte para las Infancias</p>
+            <p>Taller para las Infancias</p>
             <small
-              >Curso de introducción lúdica y educativa al mundo del arte
-              fomentando la creatividad y la expresión personal a través de
-              diversas actividades prácticas.
+              >Curso de introducción lúdica y educativa al mundo del arte,
+              fomentando la creatividad.
             </small>
           </div>
           <div>
             <span>T</span>
-            <p>Taller de pintura creativa</p>
+            <p>Taller de pintura Creativa</p>
             <small
-              >Taller en el que se abordan la teoría y práctica del color,
-              formación de texturas visuales y matéricas, composición de la
-              imagen, experimentación con materiales no tradicionales.</small
+              >Taller en el que se abordan la experimentación con materiales no
+              tradicionales.</small
             >
           </div>
         </div>
@@ -121,7 +121,7 @@
         <div class="footer-section">
           <img
             id="logo-image-footer"
-            src="./imagenes/logo.png"
+            src="./imagenes/logoOK.png"
             alt="Logo de la Escuela de Arte"
           />
         </div>
@@ -129,7 +129,8 @@
           <h3>Redes Sociales</h3>
           <ul id="ul-social">
             <li>
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 href="https://www.facebook.com/?locale=es_LA"
                 target="_blank"
                 class="social-link"
@@ -162,7 +163,8 @@
               ></a>
             </li>
             <li>
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 href="https://www.instagram.com/reel/C5kAtQau6oF/?igsh=aXc1am41emd6bW9s"
                 target="_blank"
                 class="social-link"
@@ -180,7 +182,8 @@
               ></a>
             </li>
             <li>
-              <a rel="noopener"
+              <a
+                rel="noopener"
                 href="https://twitter.com/?lang=es"
                 target="_blank"
                 class="social-link"
@@ -202,7 +205,8 @@
         <div class="footer-section">
           <h3>Contacto</h3>
           <p>
-            <a rel="noopener"
+            <a
+              rel="noopener"
               href="https://web.whatsapp.com/"
               target="_blank"
               class="social-link"
@@ -228,7 +232,9 @@
       </div>
       <div class="footer-section" style="margin-top: 40px">
         <p>
-          <a href="/politicas-de-privacidad" style="justify-content: start; margin-right: 40px;"
+          <a
+            href="/politicas-de-privacidad"
+            style="justify-content: start; margin-right: 40px"
             >Políticas de Privacidad</a
           >© 2024 Escuela de Artes Visuales. Todos los derechos reservados.
         </p>
@@ -237,11 +243,12 @@
 
     <script src="./js/script.js"></script>
     <script>
-      document.getElementById('menu-toggle').addEventListener('click', function() {
-        document.querySelector('nav').classList.toggle('show');
-        this.classList.toggle('show');
-      });
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector("nav").classList.toggle("show");
+          this.classList.toggle("show");
+        });
     </script>
-      
   </body>
 </html>

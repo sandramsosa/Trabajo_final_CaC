@@ -11,14 +11,18 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="./imagenes/logo.png" />
+    <link rel="icon" type="image/x-icon" href="./imagenes/logoOK.png" />
   </head>
 
   <body>
     <div class="contenedor">
       <header class="header">
-        <a href="/" aria-label="Enlace a la página de inicio">
-          <img class="logo-image" src="./imagenes/logo.png" alt="Logo de la Escuela de Arte" />
+        <a href="./index.html" aria-label="Enlace a la página de inicio">
+          <img
+            class="logo-image"
+            src="./imagenes/logoOK.png"
+            alt="Logo de la Escuela de Arte"
+          />
         </a>
         <button id="menu-toggle" aria-label="Toggle menu">☰</button>
         <nav aria-label="Menú principal">
@@ -132,7 +136,7 @@
           <div class="footer-section">
             <img
               id="logo-image-footer"
-              src="./imagenes/imgs-banners/logo.png"
+              src="./imagenes/logoOK.png"
               alt="Logo de la Escuela de Arte"
             />
           </div>
@@ -254,10 +258,12 @@
     </div>
     <script src="./js/cursos_script.js"></script>
     <script>
-      document.getElementById('menu-toggle').addEventListener('click', function() {
-        document.querySelector('nav').classList.toggle('show');
-        this.classList.toggle('show');
-      });
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector("nav").classList.toggle("show");
+          this.classList.toggle("show");
+        });
     </script>
   </body>
 </html>

@@ -29,6 +29,12 @@ nav {
 .header {
   grid-area: header;
 }
+.enlacesImg {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 main {
   grid-area: main;
 }
@@ -138,11 +144,10 @@ nav li a:hover {
     nav ul li a {
       font-size: 0.9rem;
     }
-    .logo-image{
+    .logo-image {
       width: 25px;
       height: 25px;
     }
-  
   }
 
   #menu-toggle {
@@ -164,7 +169,6 @@ nav li a:hover {
     margin-bottom: 10px;
   }
 
- 
   nav.show {
     display: block;
   }
@@ -173,7 +177,7 @@ nav li a:hover {
     display: none;
   }
   .enlacesImg {
-    margin-top: 6.25rem;
+    margin-top: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,9 +185,15 @@ nav li a:hover {
   .img {
     width: 100%;
   }
+  #img-2 {
+    display: none;
+  }
   h1 {
     color: #354f52;
     text-align: center;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
   }
 
   main {
@@ -193,12 +203,12 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
-    margin: 2.5rem;
+    margin: 2rem;
   }
 
   .enlacesh3 {
     color: #354f52;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     text-align: center;
     letter-spacing: 0.3rem;
     word-spacing: 0.1rem;
@@ -236,15 +246,16 @@ nav li a:hover {
     color: white;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   header {
     padding: 10px;
   }
 
   .enlacesImg {
-    margin-top: 6.25rem;
+    margin-top: 4rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .img {
@@ -311,9 +322,9 @@ nav li a:hover {
   }
 
   .enlacesImg {
-    margin-top: 6.25rem;
+    margin-top: 4rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .img {
@@ -381,10 +392,10 @@ nav li a:hover {
   }
 
   .enlacesImg {
-    margin-top: 6.25rem;
+    /*margin-top: 6.25rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
   }
   .img {
     width: 50%;

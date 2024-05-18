@@ -17,9 +17,9 @@ body {
 
 h3 {
   margin-bottom: 3rem;
-  font-weight: 700;  
+  font-weight: 700;
 }
-.acerca{
+.acerca {
   color: #354f52;
   font-size: 1.5rem;
   margin-top: 6rem;
@@ -28,16 +28,16 @@ h3 {
   letter-spacing: 0.6rem;
   word-spacing: 0.3rem;
 }
-p{
+p {
   line-height: 2rem;
 }
 
 .contenedor {
   display: grid;
   grid-template:
-    "nav" 
-    "header" 
-    "main" 
+    "nav"
+    "header"
+    "main"
     "footer";
 
   .nav {
@@ -51,12 +51,19 @@ p{
   .footer {
     grid-area: footer;
   }
-  
+
   div img {
     width: 100%;
-    height: 30rem;
+    height: 33rem;
     margin-bottom: 20px;
+    object-fit: cover;
   }
+
+  /*img {
+    width: 100%;
+    display: block;
+    height: 30rem;
+  }*/
 }
 /* estilos de header */
 header {
@@ -157,6 +164,7 @@ nav li a:hover {
 .main {
   text-align: center;
   padding: 0px 400px 100px 400px;
+  margin-bottom: 3.75rem;
 }
 
 .main h1 {
@@ -207,7 +215,7 @@ footer {
   align-items: center;
   gap: 4px;
   margin-top: 10px;
-}    
+}
 
 #logo-image-footer {
   max-height: 75px;
@@ -226,7 +234,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
   }
-  .logo-image{
+  .logo-image {
     width: 25px;
     height: 25px;
   }
@@ -250,7 +258,6 @@ footer {
     margin-bottom: 10px;
   }
 
- 
   nav.show {
     display: block;
   }
@@ -258,55 +265,51 @@ footer {
   #menu-toggle.show {
     display: none;
   }
-
-  .main {
-    padding: 20px; 
+  .contenedor div img {
+    height: 15rem;
   }
-  footer{
+  .main {
+    padding: 20px;
+  }
+  .acerca {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  footer {
     .footer-container {
       grid-template-columns: 1fr;
     }
-    #logo-image-footer{
+    #logo-image-footer {
       width: 50px;
       height: 50px;
     }
   }
-  
 }
 
-  
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    header {
-      padding: 10px;
-    }
-  
-    .main {
-      padding: 20px 200px 100px 200px;
-    }
-  
-    .footer-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    padding: 10px;
   }
-  
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    header {
-      padding: 10px 15px;
-    }
-  
-  
-    .main {
-      padding: 20px 300px 150px 300px;
-    }
-  
-    .footer-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+
+  .main {
+    padding: 20px 200px 100px 200px;
   }
-  
 
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  header {
+    padding: 10px 15px;
+  }
 
+  .main {
+    padding: 20px 300px 150px 300px;
+  }
 
-
- 
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

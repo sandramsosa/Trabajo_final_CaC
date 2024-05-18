@@ -19,11 +19,11 @@ body {
 
 .contenedor {
   display: grid;
-    grid-template:
-      "nav"
-      "header"
-      "main"
-      "footer";    
+  grid-template:
+    "nav"
+    "header"
+    "main"
+    "footer";
 }
 nav {
   grid-area: nav;
@@ -165,7 +165,8 @@ nav li a:hover {
 }
 
 /* estilo titulos */
-h2, h3 {
+h2,
+h3 {
   color: #354f52;
   margin-bottom: 3rem;
   font-weight: 700;
@@ -243,7 +244,7 @@ footer {
     flex-direction: row;
     align-items: flex-start;
   }
-  
+
   .logo-image {
     width: 25px;
     height: 25px;
@@ -275,8 +276,12 @@ footer {
   }
   .imgBanner {
     margin-top: 3.125rem;
+    object-fit: cover;
   }
-
+  .tituloh3 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
   main {
     grid-area: main;
   }
@@ -308,7 +313,7 @@ footer {
     justify-content: center;
     margin: 3rem;
   }
-  
+
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;
@@ -353,9 +358,9 @@ footer {
       "header"
       "div"
       "main"
-      "footer";    
+      "footer";
   }
-  
+
   .header {
     grid-area: header;
     margin-bottom: 1.5rem;
@@ -363,6 +368,7 @@ footer {
   .imgBanner {
     margin-top: 3.125rem;
     height: 25rem;
+    object-fit: cover;
   }
   main {
     grid-area: main;
@@ -394,7 +400,7 @@ footer {
     margin: 3rem;
     width: 50%;
   }
-  
+
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;
@@ -415,7 +421,6 @@ footer {
   }
 }
 
-
 /********************************************************************/
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   header {
@@ -425,8 +430,9 @@ footer {
   .imgBanner {
     margin-top: 3.125rem;
     height: 30rem;
+    object-fit: cover;
   }
-  
+
   .main {
     padding: 20px 200px 100px 200px;
   }
@@ -434,7 +440,7 @@ footer {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .cursos {
     display: flex;
     flex-direction: column;
@@ -462,7 +468,7 @@ footer {
     margin: 2rem;
     width: 50%;
   }
- 
+
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;
@@ -481,7 +487,6 @@ footer {
     background-color: #84a98c;
     color: white;
   }
-  
 }
 /**********************************************************************/
 @media screen and (min-width: 1444px) {
@@ -493,7 +498,7 @@ footer {
     margin-top: 3.125rem;
     height: 30rem;
   }
-  
+
   .cursos {
     display: flex;
     flex-direction: column;
