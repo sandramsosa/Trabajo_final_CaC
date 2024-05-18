@@ -336,13 +336,17 @@ footer {
     display: none;
   }
   #container-title-image-over {
-    bottom: 620px;
+    display: none;
+    /* bottom: 620px;
     right: 100px;
-    padding: 0.3125rem;
+    padding: 0.3125rem;*/
   }
 
   .title-image-over {
     font-size: 2rem;
+  }
+  section a h2 {
+    font-size: 1.4rem;
   }
 
   #letters {
@@ -353,7 +357,7 @@ footer {
     margin-top: 1rem;
   }
   section {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   #letters small {
     margin-top: 20px;
