@@ -170,7 +170,7 @@ form {
   color: white;
 }
 main {
-  margin-bottom: 9rem;
+  margin-bottom: 6rem;
 }
 
 /* estilo footer */
@@ -210,7 +210,10 @@ footer {
 .footer-section p {
   text-align: center;
 }
-
+.footer-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
 .social-link {
   display: flex;
   justify-content: center;
@@ -293,8 +296,11 @@ footer {
     width: 98%;
   }
 
-  .footer-container {
+  /*.footer-container {
     grid-template-columns: repeat(2, 1fr);
+  }*/
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 

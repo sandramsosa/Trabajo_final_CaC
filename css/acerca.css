@@ -51,6 +51,9 @@ p {
   .footer {
     grid-area: footer;
   }
+  .footer-section h3 {
+    margin: 0px;
+  }
 
   div img {
     width: 100%;
@@ -296,7 +299,7 @@ footer {
   }
 
   .footer-container {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr);*/
   }
 }
 

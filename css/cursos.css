@@ -36,7 +36,9 @@ nav {
 .imgBanner {
   height: 15rem;
 }
-
+.Caja {
+  box-shadow: 0 2rem 4.2rem rgba(0, 0, 0, 0.075);
+}
 main {
   grid-area: main;
 }
@@ -66,7 +68,9 @@ footer {
   background-color: #84a98c;
   color: white;
 }
-
+.footer-section h3 {
+  margin: 0px;
+}
 /******LILIA************************/
 
 /* Estilos del encabezado */
@@ -419,6 +423,9 @@ footer {
     background-color: #84a98c;
     color: white;
   }
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /********************************************************************/
@@ -437,8 +444,11 @@ footer {
     padding: 20px 200px 100px 200px;
   }
 
-  .footer-container {
+  /*.footer-container {
     grid-template-columns: repeat(2, 1fr);
+  }*/
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cursos {
@@ -462,6 +472,7 @@ footer {
 
   .img-box {
     width: 100%;
+    height: fit-content;
   }
   .info-box {
     text-align: center;
@@ -489,9 +500,12 @@ footer {
   }
 }
 /**********************************************************************/
-@media screen and (min-width: 1444px) {
+@media screen and (min-width: 1440px) {
   header {
     padding: 10px 15px;
+  }
+  .main {
+    padding: 20px 200px 100px 200px;
   }
 
   .imgBanner {
@@ -527,6 +541,7 @@ footer {
     margin: 3rem;
     width: 50%;
   }
+
   .btn-caja {
     background-color: #cad2c5;
     color: #354f52;

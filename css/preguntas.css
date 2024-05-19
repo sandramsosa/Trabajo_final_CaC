@@ -192,7 +192,11 @@ footer {
 .footer-section p {
   text-align: center;
 }
-
+.footer-section h3 {
+  margin: 0px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 .social-link {
   display: flex;
   justify-content: center;
@@ -282,7 +286,7 @@ footer {
   }
 
   .footer-container {
-    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: repeat(2, 1fr);*/
   }
 }
 
